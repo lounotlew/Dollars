@@ -53,7 +53,7 @@ geolocator1 = GoogleV3()
 class Dollars:
 
 	def __init__(self, master):
-		self.username = "" 		 # Current username. Initialized with empty string.
+		self.username = ""       # Current username. Initialized with empty string.
 		self.logged_in = False   # Whether or not a user has been selected. Initially false.
 
 		with open("data/main/users.txt", "rb") as fp:  # Read in the usernames into a list from 'data/main/users.txt'.
@@ -66,9 +66,9 @@ class Dollars:
 		# Budget data (as a pandas data frame) for the current user. Initialized as an empty data frame with defined columns.
 		self.budgetData = pd.DataFrame([], columns = ["Month", "Year", "Amount"])
 		self.currentBudget = ['0', '0', '0']		# List containing data for current month, year, and budget as strings (to write to .txt file). Initially empty.
-		self.userFolder = ""     		   			# File path to the current user's folder in 'data/users'. Initialized as an empty string.
-		self.userSpendingFilePath = ""     			# File path to the .gz file containing the current user's spending data. Intialized as an empty string.
-		self.userBudgetFilePath = ""       			# File path to the .gz file containing the current user's budget data. Initialized as an empty string.
+		self.userFolder = ""     		   	# File path to the current user's folder in 'data/users'. Initialized as an empty string.
+		self.userSpendingFilePath = ""     		# File path to the .gz file containing the current user's spending data. Intialized as an empty string.
+		self.userBudgetFilePath = ""       		# File path to the .gz file containing the current user's budget data. Initialized as an empty string.
 
 		# Frames for the homepage of Dollars.
 		frame1 = Frame(master)
