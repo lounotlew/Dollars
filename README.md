@@ -27,3 +27,17 @@ To run this application (after installing all required packages), type the follo
 ```
 python3 gui.py
 ```
+
+### References
+
+References to the libraries and packages used in Dollars:
+
+1) ``tkinter``: https://wiki.python.org/moin/TkInter
+2) ``matplotlib``: https://matplotlib.org/gallery/index.html
+3) ``pandas``: https://pandas.pydata.org/pandas-docs/stable/
+4) ``pandastable``: https://github.com/dmnfarrell/pandastable
+5) ``scipy``/``numpy``: https://www.scipy.org/
+6) ``geopy``: https://geopy.readthedocs.io/en/stable/
+7) ``gmplot``: https://github.com/vgm64/gmplot
+8) ``statsmodels`` (specifically time series ARIMA): http://www.statsmodels.org/dev/generated/statsmodels.tsa.arima_model.ARIMA.html
+9) ``pyramid-arima``: https://github.com/tgsmith61591/pyramid
