@@ -1,5 +1,5 @@
 # Dollars - Personal Finance Management, Visualization, and Prediction
-###### Written by Lewis Kim
+> Written by Lewis Kim
 
 ### Description
 
