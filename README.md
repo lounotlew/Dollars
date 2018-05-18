@@ -3,7 +3,7 @@
 
 ### Description
 
-Dollars is a personal finance manager, visualizer, and predictor, written in Python (3.6). Dollars allows any user to log and manage their personal spending data in a very organized way (e.g. spending amount, location, date, category, etc.), and uses the data to track and analyze the user's monthly budget. Dollars also allows users to visualize and examine their spendings for the current month through spending trend graphs, pie charts, frequency barplots, and heat maps. Users can also choose to forecast their spendings (overall or by spending category) for the rest of the month using a time series ARIMA model, which can also predict whether or not a user will be over or underbudget for the month.
+Dollars is a personal finance manager, visualizer, and predictor, written in Python (3.6). Dollars allows any user to log and manage their personal spending data in a very organized way (e.g. spending amount, location, date, category, etc.), and uses the data to track and analyze the user's monthly budget. Dollars also allows users to visualize and examine their spendings for the current month through spending trend graphs, pie charts, frequency barplots, and heat maps. Users can also choose to forecast their spendings (overall or by spending category) for the rest of the month using a time series ARIMA model, which can also predict whether or not a user will be over or underbudget by the end of the month.
 
 For a GUI sample and applet walkthrough, click this [link](gui_sample/README.md).
 
