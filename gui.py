@@ -424,22 +424,25 @@ class Dollars:
 		# Check if the country is the US.
 		try:
 			loc = location[0]
-			location = loc.address
-			full_address = location.split(",")
-			country = full_address[3].split(" ")[1]
+			address = loc.address
+			city_state_country = address.split(",")[-3:]
+
+			# Remove spaces around words.
+			city_state_country = [x.split(" ")[1] for x in city_state_country]
 
 		except:
 			showinfo("Error", "Dollars currently only supports addresses in the United States.")
 			return
 
 		# Split the returned strings into the necessary counterparts to retrieve the city/state names.
-		city = full_address[1].split(" ")[1]
-		state = full_address[2].split(" ")[1]
+		city = city_state_country[0]
+		state = city_state_country[1]
+		country = city_state_country[2]
 
-		# Add the locational data to locational_data with the correct keys.
+		# # Add the locational data to locational_data with the correct keys.
 		locational_data['latitude'] = latitude
 		locational_data['longitude'] = longitude
-		locational_data['address'] = location
+		locational_data['address'] = address
 		locational_data['city'] = city
 		locational_data['state'] = state
 		locational_data['country'] = country
@@ -797,6 +800,7 @@ class Dollars:
 		title = "Spending Pie Chart for Number of Purchases in Categories for " + self.username + ": " + self.countPCMonth.get()
 
 		ax.set_title(title)
+		plt.legend(loc = 'best')
 
 		plt.show()
 
@@ -828,6 +832,7 @@ class Dollars:
 		title = "Spending Pie Chart for Amount in Purchases in Categories for " + self.username + ": " + self.sumPCMonth.get()
 
 		ax.set_title(title)
+		plt.legend(loc = 'best')
 
 		plt.show()
 
@@ -860,6 +865,7 @@ class Dollars:
 		title = "Pie Chart for Number of Planned vs. Unplanned Purchases for " + self.username + ": " + self.pupMonth.get()
 
 		ax.set_title(title)
+		plt.legend(loc = 'best')
 
 		plt.show()
 
